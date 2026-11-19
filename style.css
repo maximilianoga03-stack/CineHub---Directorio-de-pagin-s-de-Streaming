@@ -1,0 +1,156 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fondo oscuro enriquecido con un matiz cálido/dorado muy suave en degradado, inspirado en el logo */
+    background: radial-gradient(circle at top, #141624 0%, #0a0b10 100%);
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+.encabezado {
+    /* Degradado de fondo que combina el azul de fondo del logo con destellos cálidos de oro */
+    background: linear-gradient(180deg, rgba(239, 142, 56, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%), #13141f;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    border-bottom: 3px solid #ef8e38; /* Borde inferior color dorado/naranja */
+    margin-bottom: 40px;
+}
+
+/* Logo de CineHub en el encabezado */
+.logo-principal {
+    margin-bottom: 15px;
+}
+
+.logo-header {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 15px rgba(239, 142, 56, 0.4));
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Color dorado/naranja del nuevo logo para "Hub" */
+.encabezado h1 span {
+    color: #ef8e38;
+}
+
+.encabezado p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Grilla de tarjetas */
+.grid-paginas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta {
+    background-color: #12131b;
+    border: 1px solid #1f2130;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    /* Resplandor hover que usa el tono del nuevo logo */
+    box-shadow: 0 10px 25px rgba(239, 142, 56, 0.12);
+    border-color: #ef8e38;
+}
+
+/* Encabezado de la tarjeta con imagen y título alineados */
+.tarjeta h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Estilo de los logos en las tarjetas */
+.logo-tarjeta {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #2a2d3d;
+    background-color: #ffffff;
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+/* Botón base */
+.boton {
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+    filter: brightness(1.15);
+    transform: scale(1.02);
+}
+
+/* Colores personalizados para cada botón según su logo */
+.btn-cinemultimedia { background-color: #c91c1c; } /* Rojo Cine */
+.btn-clasicos      { background-color: #a83232; } /* Rojo Retro / TV */
+.btn-gatonplay     { background-color: #2e2b30; border: 1px solid #555; } /* Oscuro / Gato */
+.btn-identi        { background-color: #0077b6; } /* Azul Identi */
+.btn-mundotoon     { background-color: #e63946; } /* Multicolor / Animación */
+.btn-seriesretro   { background-color: #d4af37; color: #000; } /* Amarillo Retro */
+.btn-sololatino    { background-color: #00b4d8; } /* Celeste / Azul SoloLatino */
+.btn-titoseries    { background-color: #8338ec; } /* Violeta / Lila */
+.btn-cuevana       { background-color: #0077ff; } /* Azul Cuevana */
+
+/* Pie de página */
+.pie-pagina {
+    text-align: center;
+    padding: 25px;
+    background-color: #07080c;
+    color: #525f73;
+    font-size: 0.9rem;
+    border-top: 1px solid #141724;
+}
